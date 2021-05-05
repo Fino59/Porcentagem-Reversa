@@ -17,6 +17,8 @@
     + Imagine that you want to find 100% (total value) from a number that you alredy have.
     + $ 225,00 corresponds to 75% from a value, how to know how much is 100%?
     + Formula: **225 ÷ (75 ÷ 100) = 300**.
-    + **100%** from the value will be **R$ 300,00**.
+    + **100%** from the value will be **$ 300,00**.
+
+Acess the github pages here: [Percentage (%) Reverse](https://fino59.github.io/Porcentagem-Reversa/)
 
 ![Preview](https://github.com/Fino59/Porcentagem-Reversa/blob/main/assets/PercentReverse.png)
