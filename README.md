@@ -19,4 +19,4 @@
     + Formula: **225 ÷ (75 ÷ 100) = 300**.
     + **100%** from the value will be **R$ 300,00**.
 
-![Preview](https://)
+![Preview](https://github.com/Fino59/Porcentagem-Reversa/blob/main/assets/PercentReverse.png)
