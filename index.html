@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de % Reversa</title>
+</head>
+<body>
+    <header>
+        <a href="https://github.com/Fino59" target="_blank"> 
+            <img src="./assets/DF Logo.png" alt="Logo do desenvolvedor" class="logo">
+        </a> 
+        <h1>Calculadora de % Reversa</h1>
+        <h3>Escolha qual a conta deseja executar:</h3>
+    </header>
+    
+
+    <section class="cards">
+        
+        <div class="percent-contrary">
+            <p class="subtitle">Porcentagem ao contrário</p>
+            <form action="">
+                <label for="discount" class="text">Valor do desconto em R$</label>
+                <input type="number" id="discount" name="discount" >
+                <label for="totalValue" class="text">Valor total em R$</label>
+                <input type="number" id="totalValue" name="totalValue">
+            </form>
+            <button onclick="contrary()" id="contrary" class="button">Calcular</button>
+            <div id="output-contrary"><p class="output-contrary">Aqui vai o resultado do seu cálculo</p></div>
+            <p class="modal-percent-contrary">Duvidas?</p>      
+        </div>
+
+        <div class="percent-amount">
+            <p class="subtitle">Porcentagem do valor total</p>
+            <form action="">
+                <label for="value" class="text">Valor atual em R$</label>
+                <input type="number" id="value" name="value">
+                <label for="percent"class="text">Total da porcentagem do valor atual</label>
+                <input type="number" id="percent" name="percent">
+            </form>
+            <button onclick="amount()" id="amount" class="button">Calcular</button>
+            <div id="output-amount"><p class="output-amount">Aqui vai o resultado do seu cálculo</p></div>
+            <div><p class="modal-percent-amount">Duvidas?</p></div>            
+        </div>          
+    </section>
+
+   <div id="modal-percent-contrary" class="modal-container">
+        <div class="modal">
+            <button class="close">X</button>
+            <h3>Como funciona?</h3>
+            <p class="how-contrary-works">Imagine que você realizou uma compra e esse produto tem o preço de R$ 250,00. O seu vale compras é de R$ 30,00. Neste caso, quanto seria o percentual de desconto que você está obtendo?
+            Para fazer este cálculo da porcentagem, usamos a seguinte fórmula:
+
+            <b>
+                (30 ÷ 250) x 100 = 12%.
+            </b>
+                
+            Ou seja, o vale desconto de R$ 30,00 corresponde a um desconto de <b>12%</b> sobre o valor total da compra.</p>
+        </div>
+    </div>
+
+    <div id="modal-percent-amount" class="modal-container">
+        <div class="modal">
+            <button class="close">X</button>
+            <h3>Como funciona?</h3>
+            <p>Imagine que você deseja descobrir 100% (valor total) de um número que você já tem. 
+            Por exemplo, imagine que R$ 225,00 corresponda a 75% de um valor, como saber quanto seria 100%?
+                
+            Para fazer este cálculo da porcentagem, usamos a seguinte fórmula:
+            <b>225 ÷ (75 ÷ 100) = 300</b>.
+                
+            Ou seja, 100% do valor seria igual a R$ 300,00.</p>
+        </div>
+    </div>    
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
